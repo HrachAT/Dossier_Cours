@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adresse Utilisateur</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="utilisateurs.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Une donnée envoyée, une donnée reçue :</h1>
+            <form>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mt-5">
+                            <span class="input-group-text">Liste des Utilisateurs</span>
+                            <select class="form-select" name="listeutilisateur" id="listeUtilisateur">       
+                            </select>
+                        </div>
+                        <textarea class="mt-3 w-100 form-text" name="adresse" id="adresse" readonly="readonly"></textarea>
+                        <textarea class="mt-3 w-100 form-text" name="prenom" id="prenom" readonly="readonly"></textarea>
+                    </div>
+                </div>
+           </form>
+        </div>
+    </body>
+</html>
