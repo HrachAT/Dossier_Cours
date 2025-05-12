@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>formulaire cp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="PHP/traitement_cp.php" method="get">
+            <input type="text" name="cp" placeholder="Code postal"
+                   pattern="^[0-9][0-9][0-9][0-9][0-9]$" 
+                   title="5 digits"/>
+            <input type="submit"/>
+        </form>
+    </body>
+</html>
