@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>France 2015</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="france2015.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="france2015.html">France 2015</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dept_pour_ville.html">Département selon ville</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1 class="my-5">Une donnée envoyée, N données reçues :</h1>
+            <form>
+                <div class="row">    
+                    <div class="col-4">
+                        <div class="input-group me-3">
+                            <div class="input-group-text">Région</div>
+                            <select name="regions" class="form-select" id="regions">
+                                <option value="-1" selected="selected">Sélectionnez une région</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group me-3 col-4">
+                            <div class="input-group-text">Département</div>
+                            <select name="departements" class="form-select" id="departements">
+                            <option value="-1" selected="selected">Sélectionnez un département</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="input-group col-4">
+                            <div class="input-group-text">Ville</div>
+                            <select name="villes" class="form-select" id="villes">
+                                <option value="-1" selected="selected">Sélectionnez une ville</option>
+                            </select>
+                        </div>  
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

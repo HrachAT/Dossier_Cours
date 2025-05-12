@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Departements selon ville</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" type="text/css">
+
+
+        <script src="libs/jquery/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+
+        <script src="dept_pour_ville.js"></script>
+    </head>
+    <body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="france2015.html">France 2015</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dept_pour_ville.html">Département selon ville</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <h1 class='mt-2'>Table des Departements selon ville</h1>
+            <form>
+                <div class="input-group" style="max-width: 350px;"> 
+                    <input type="text" id="ville" class="form-control " placeholder="Entrer le nom d'une ville">
+                    <button type="submit" id="envoyer" class="btn btn-primary">Envoyer</button>
+                </div>
+            </form>
+        </div>
+        <div class="container-fluid">
+            <table id="deptVille" class="table table-striped table-bordered w-100"></table>
+        </div>
+    </body>
+</html>
